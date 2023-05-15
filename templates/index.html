@@ -7,11 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
 </head>
-<body>
+<body style="background:grey">
     <div style="text-align: center">
         <h1>My portfolio</h1>
-        <img src="{{ url_for('static', filename='dog.png') }}" alt="doggo"><br>
+        <img src="{{ url_for('static', filename='dog.png') }}" alt="doggo" width="600px" height="300px"><br>
         <p><a href="{{ url_for('about')}}">..about me</a></p>
+        <p><a href="{{ url_for('contact')}}">..сontact to me</a></p>
+        <p><a href="{{ url_for('gallery')}}">..gallery</a></p>
     </div>
 </body>
 </html>
