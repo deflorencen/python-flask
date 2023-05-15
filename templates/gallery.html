@@ -7,7 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gallery</title>
 </head>
-<body>
-
+<body style="background:grey">
+    <div style="text-align: center">
+        <h1>Gallery</h1>
+        <img src="{{ url_for('static', filename='p1.png') }}" alt="-" width="600px" height="500px">
+        <img src="{{ url_for('static', filename='p2.png') }}" alt="-" width="600px" height="500px">
+        <p><a href="{{ url_for('index')}}">..back to home</a></p>
+        <p><a href="{{ url_for('contact')}}">..сontact to me</a></p>
+        <p><a href="{{ url_for('about')}}">..about me</a></p>
+    </div>
 </body>
 </html>
