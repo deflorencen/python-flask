@@ -31,5 +31,23 @@ def login():
         return render_template('login.html')
 
 
+@application.route("/s/")
+def szablon():
+    return render_template('n_index.html', user='Stan', email='a@b.su')
+
+
+@application.route('/new_index')
+def new_index():
+    return render_template('new_index.html')
+
+@application.route('/base')
+def base():
+    return render_template('base.html')
+
+@application.route('/menu')
+def menu():
+    return render_template('menu')
+
+
 if __name__ == '__main__':
     application.run(debug=True, host='localhost')
